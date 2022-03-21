@@ -1,0 +1,49 @@
+@import "/styles/mixin";
+
+.Item {
+  width: 100%;
+}
+
+.ItemImage {
+  display: block;
+  width: 100%;
+  height: 130px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.ItemTitle {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 120%;
+  color: #222934;
+  margin-bottom: 5px;
+}
+
+.ItemTime {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #4D4D4D;
+}
+
+@include md-screen {
+  .ItemImage {
+    height: 240px;
+    margin-bottom: 15px;
+  }
+  .ItemTitle {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .ItemTime {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+@include lg-screen {
+  .ItemImage {
+    height: 280px;
+  }
+}

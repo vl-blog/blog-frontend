@@ -1,0 +1,21 @@
+@mixin container {
+  padding: 0 20px;
+
+  @include lg-screen {
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@mixin md-screen {
+  @media (min-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin lg-screen {
+  @media (min-width: 1600px) {
+    @content;
+  }
+}
